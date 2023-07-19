@@ -153,7 +153,7 @@ for (let candidate of candidates.rules) {
     case ExprParser.RULE_variableRef: {
       let variables = symbol.getSymbolsOfType(c3.VariableSymbol);
       for (variable of variables)
-        functionNames.push(variable.name);
+        variableNames.push(variable.name);
       break;
     }
   }
